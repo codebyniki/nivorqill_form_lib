@@ -233,9 +233,9 @@ cd ..
 flutter pub publish --dry-run
 ```
 
-Add your real repository/homepage URL to pubspec.yaml before publishing to remove
-its optional metadata warning. No source repository or package name is reserved
-by this archive. See [architecture](doc/ARCHITECTURE.md) and [release notes](doc/VALIDATION.md).
+See the [API guide](doc/API.md), [feature guide](doc/FEATURES.md),
+[migration guide](doc/MIGRATING.md), [architecture](doc/ARCHITECTURE.md), and
+[validation status](doc/VALIDATION.md).
 
 MIT license. Flutter and shared_preferences retain their upstream licenses.
 

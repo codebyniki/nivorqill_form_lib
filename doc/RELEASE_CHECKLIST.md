@@ -1,12 +1,11 @@
 # 1.0 release checklist
 
-The `1.0.0-rc.1` candidate keeps the public API open to changes until the
-following native release gates are complete. It is not published by this archive.
+Version `1.0.0` is prepared locally. The checks below record what still needs
+verification before relying on the package for production.
 
 ## Automated checks
 
-1. Run `bash tool/validate.sh`; the publication dry-run has one optional warning
-   until a genuine repository or homepage is configured.
+1. Run `bash tool/validate.sh`, including the publication dry-run.
 2. Push this source to your GitHub repository and run **Validate form library**.
    The workflow covers Flutter 3.41/current stable, web build, iOS simulator and
    Android emulator preferences integration. Those CI jobs have not yet run here.
@@ -34,8 +33,8 @@ steps. Do not include personal form contents or credentials in a public issue.
 
 ## Stable release
 
-After the gates pass and you accept the public API, update `version` to `1.0.0`,
-add a matching changelog entry, rerun the checks and `flutter pub publish --dry-run`.
+After the checks pass and you accept the public API, rerun the checks and
+`flutter pub publish --dry-run`.
 Review the package name, license, real repository/homepage metadata, and generated
 file list. Publishing uses your own authorized pub.dev account:
 

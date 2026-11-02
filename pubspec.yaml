@@ -2,6 +2,7 @@ name: nivorquill_form_lib
 description: Typed Flutter forms with validation, custom field bindings, debounced autosave, versioned draft recovery and user-scoped storage.
 version: 1.0.0
 repository: https://github.com/codebyniki/nivorqill_form_lib
+issue_tracker: https://github.com/codebyniki/nivorqill_form_lib/issues
 environment:
   sdk: '>=3.11.0 <4.0.0'
   flutter: '>=3.41.0'

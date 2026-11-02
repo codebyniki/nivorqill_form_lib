@@ -1,7 +1,18 @@
-# Validation — 1.0.0-rc.1
+# Validation — 1.0.0
 
-This is a release candidate for `1.0.0`, not a production certification. Native
-storage and real process restart checks remain before a stable 1.0 release.
+The 1.0.0 release is prepared locally. Native storage and real process restart
+checks below remain outstanding; passing local tests is not a production certification.
+
+## Current local checks
+
+On 2 November 2026, Flutter 3.44.8 / Dart 3.12.2 passed formatting, analysis,
+38 library tests, the example test, and a clean-tree publication dry run with
+zero warnings. Controller tests also passed with `TZ=Pacific/Honolulu` and
+`TZ=Pacific/Kiritimati`; these tests save and restore within each time zone, not
+across processes or devices. These results preceded the documentation-only release
+updates; rerun `bash tool/validate.sh` for the exact release commit.
+
+## Earlier release-candidate checks
 
 ## Completed locally on 2 November 2026
 
@@ -30,13 +41,12 @@ The local Linux sandbox required process-metadata compatibility support for Dart
 including forwarding it to dependency build hooks. The package and delivered
 source contain no compatibility shim or modified runtime. This is not a benchmark.
 
-## Outstanding before stable 1.0
+## Remaining verification
 
 - Run the provided iOS and Android simulator integration jobs. They are configured
   but were not executed here; Xcode and Android emulators are unavailable.
 - Test a full app termination and relaunch on iOS and Android. The integration
   test recreates a controller within one process and does not prove OS restart.
-- Review API documentation, published name, license and real repository metadata.
 - Inspect a fresh `flutter pub publish --dry-run` and complete an actual release
   only through an authorized pub.dev account.
 
@@ -47,7 +57,5 @@ must provide an appropriate store and manage consent and retention.
 
 ## Publication dry-run
 
-A clean copy of `1.0.0-rc.1` was checked with `flutter pub publish --dry-run`.
-It reported no package errors and one optional warning for the missing repository
-or homepage. Pub exits with code 65 for this warning. The actual publication is
-not performed by this command, and the name remains unreserved.
+The dry run validates the archive but does not publish it or reserve the name.
+Publishing requires an authorized pub.dev account.
