@@ -16,7 +16,7 @@ widget bindings and explicit local draft recovery. Version **1.0.0-rc.1**.
 - Opt-in persistence: registered fields are not saved unless `persist: true`.
 - Submission freezes editing and removes a draft only after callback success.
 
-This is a 1.0 release candidate. See [validation status](doc/VALIDATION.md) for actual checks.
+See [validation status](doc/VALIDATION.md) for actual checks and remaining native verification.
 
 ## Requirements and local installation
 

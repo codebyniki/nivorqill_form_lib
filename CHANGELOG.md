@@ -1,3 +1,10 @@
+# 1.0.0
+
+- Add a calendar date-only codec and customizable Material text input options.
+- Avoid draft writes for edits to non-persisted fields and ignore empty recovery candidates.
+- Document safe navigation saves and application-level async validation.
+- Native restart and device verification remain as described in the release checklist.
+
 # 1.0.0-rc.1
 
 - Add customizable loading, draft-recovery and initialization-error builders.
