@@ -1,0 +1,17 @@
+.dart_tool/
+build/
+coverage/
+pubspec.lock
+.flutter-plugins-dependencies
+*.iml
+.idea/
+.DS_Store
+example/linux/
+example/macos/
+example/windows/
+example/.metadata
+pub-check.log
+
+example/android/local.properties
+example/ios/Flutter/Generated.xcconfig
+example/ios/Flutter/flutter_export_environment.sh
